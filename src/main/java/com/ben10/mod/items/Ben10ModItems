@@ -1,0 +1,13 @@
+package com.ben10.mod.items;
+
+import net.minecraft.item.Item;
+
+public final class Ben10ModItems {
+
+
+    public static Item  omnitrixOS;
+    public static final void init() {
+          omnitrixOS = new Item().setUnlocalizedName("omnitrixOS");
+          GameRegistry.registerItem(omnitrixOS, "omnitrixOS");
+    }
+}
