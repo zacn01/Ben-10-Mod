@@ -15,6 +15,9 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
 
 @Mod(modid = Ben10Mod.MODID, version = Ben10Mod.VERSION)
+@SidedProxy(clientSide="com.ben10.mod.proxy.ClientProxy", serverSide="com.ben10.mod.proxy.ServerProxy")
+
+public static CommonProxy proxy;
 
 public class Ben10Mod
 
@@ -27,18 +30,18 @@ public class Ben10Mod
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) 
     {
-        
+        proxy.preInit(e);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-
+        proxy.preInit(e);
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-    
+        proxy.preInit(e);
     }
 
 }
