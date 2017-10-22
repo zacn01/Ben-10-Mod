@@ -3,7 +3,7 @@ package com.ben10.mod;
 
 
 import net.minecraftforge.fml.common.Mod;
-
+import com.ben10.mod.item.Ben10ModItems;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
