@@ -3,7 +3,7 @@ package com.ben10.mod;
 
 
 import net.minecraftforge.fml.common.Mod;
-import com.ben10.mod.item.Ben10ModItems;
+import com.ben10.mod.items.Ben10ModItems;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -36,12 +36,13 @@ public class Ben10Mod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        proxy.preInit(e);
+        proxy.init(e);
+        ModItems.init();
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-        proxy.preInit(e);
+        proxy.postinit(e);
     }
 
 }
