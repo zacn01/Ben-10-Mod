@@ -24,14 +24,21 @@ public class Ben10Mod
 
     public static final String VERSION = "a0.1";
 
-    
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent event) 
+    {
+        
+    }
 
     @EventHandler
-
     public void init(FMLInitializationEvent event)
-
     {
 
+    }
+    @EventHandler
+    public void postInit(FMLPostInitializationEvent event)
+    {
+    
     }
 
 }
