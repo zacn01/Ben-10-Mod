@@ -7,7 +7,7 @@ public final class Ben10ModItems {
 
     public static Item  omnitrixOS;
     public static final void init() {
-          omnitrixOS = new Item().setUnlocalizedName("omnitrixOS");
+          omnitrixOS = new Item().setUnlocalizedName("omnitrixOS").setCreativeTab(CreativeTabs.tabMisc);
           GameRegistry.registerItem(omnitrixOS, "omnitrixOS");
     }
 }
